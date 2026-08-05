@@ -9,4 +9,4 @@ and a real photo strip — all processed on your device.
 
 - [Privacy Policy](privacy)
 
-Contact: charlesxzha@gmail.com
+Contact: sayyay.booth@gmail.com
