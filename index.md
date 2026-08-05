@@ -9,4 +9,4 @@ and a real photo strip — all processed on your device.
 
 - [Privacy Policy](privacy)
 
-Contact: sayyay.booth@gmail.com
+Contact: sayyay.app@gmail.com
