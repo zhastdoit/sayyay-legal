@@ -49,3 +49,7 @@ If this policy changes, the updated version will be posted at this address with 
 ## Contact
 
 Questions about this policy: **sayyay.app@gmail.com**
+
+---
+
+*[中文版 / Chinese version](privacy-zh)*
