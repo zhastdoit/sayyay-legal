@@ -1,6 +1,6 @@
 # Privacy Policy for SayYay
 
-**Last updated: August 1, 2026**
+**Last updated: August 18, 2026**
 
 SayYay is a photo booth app for iPhone and iPad. It is built to work entirely on your device.
 
@@ -13,7 +13,21 @@ SayYay is a photo booth app for iPhone and iPad. It is built to work entirely on
 SayYay uses the camera to show a live preview and to take your photo strip. Camera frames are processed **on your device, in memory, in real time** — used to display the preview, to place virtual decorations on detected faces, and to capture the photos you take.
 
 - Camera frames are **never** uploaded, transmitted, or sent anywhere.
-- Face tracking uses Apple's ARKit on your device. SayYay does not perform face recognition, does not identify people, and does not create or store any face data, faceprint, or biometric template.
+
+## Face data (TrueDepth API)
+
+SayYay uses Apple's ARKit face tracking, which relies on the TrueDepth camera, for one purpose only: to place virtual decorations — a hat, glasses, a sign, floating effects — in the right position on a face while you frame your shot.
+
+**What is collected.** From ARKit the app receives, for each face currently in view, only: the face's position and orientation in space, a temporary identifier that distinguishes one face from another for as long as they remain in view, whether the face is still being tracked, and a generic face mesh. Nothing else is requested or used — in particular SayYay does not use facial expression data (blend shapes), eye or gaze tracking, or the depth map.
+
+**How it is used.** The position and orientation decide where a decoration is drawn. The temporary identifier lets each person in a group receive their own decoration. The face mesh is used only as an invisible mask, so a hat correctly disappears behind the back of the head instead of floating through it. It is never drawn, saved, or examined.
+
+**Storage and retention.** None of this leaves the frame it arrives in. It exists in the device's memory only while the camera preview is on screen, is replaced every frame, and is discarded the moment the face leaves the view or you leave the camera screen. **No face data is ever written to storage**, and the temporary identifiers do not persist between sessions. The photos you take are ordinary camera images with the decorations drawn on top; they contain no face data, no mesh, and no depth information.
+
+**Sharing.** This data is never transmitted anywhere and is never shared with any third party. SayYay contains no networking code, no servers, and no third-party SDKs, so there is no mechanism by which it could leave your device.
+
+**What SayYay does NOT do.** It does not perform face recognition. It does not identify, authenticate, or attempt to determine the identity, age, gender, or emotional state of anyone. It does not create, derive, or store a faceprint, face template, biometric identifier, or any other data that could be used to recognise a person. It does not build a profile of anyone and does not use face data for advertising, analytics, or any purpose other than drawing decorations in the live preview.
+
 - The photos you take exist only in the app while your session is open, until you save or share them.
 
 ## Photos
